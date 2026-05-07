@@ -1,0 +1,25 @@
+{
+  "name": "proleadmaker",
+  "version": "1.0.0",
+  "description": "Pro Lead Maker - B2B Lead Generation Agency",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "npm run build:speed-insights",
+    "build:speed-insights": "esbuild speed-insights.js --bundle --format=iife --outfile=dist/speed-insights.bundle.js --minify"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  },
+  "keywords": [
+    "lead-generation",
+    "b2b",
+    "cloudflare-workers"
+  ],
+  "author": "Pro Lead Maker",
+  "license": "UNLICENSED"
+}
