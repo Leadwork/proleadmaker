@@ -4,3 +4,10 @@
 !.dev.vars.example
 .env*
 !.env.example
+
+# Dependencies
+node_modules/
+
+# Build artifacts (keep dist/speed-insights.bundle.js for deployment)
+dist/*
+!dist/speed-insights.bundle.js
